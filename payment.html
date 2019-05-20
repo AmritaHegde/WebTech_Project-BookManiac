@@ -1,0 +1,250 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+input{background-color:transparent;}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  padding: 0 16px;
+}
+
+
+.container {
+  background-color: #5d5955
+  padding: 5px 20px 15px 20px;
+ 
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: white;
+}
+
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+
+  border: none;
+  width: 100%;
+
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+.topnav {
+    overflow:hidden;
+    background-color:orange;
+}
+#about {
+  color: white;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.topnav p {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: blue;
+    color: white;
+}
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Verdana, Arial, san-serif;
+	font-size: 15px;
+			color:white;
+
+	background: #4b4743;}
+
+
+</style>
+</head>
+<body>
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(7,13,96);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(40,149,211);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"/>
+  <text fill="orange" font-size="45" font-family="Verdana" 
+  x="50" y="86">BookManiac!!</text>
+</svg>
+<br>
+<br>
+  <div class="topnav">
+  
+  <!--<p><b><i>hello,<script>localStorage.setItem("Username","Anvitha");
+  document.write(localStorage.Username);</script></b></i></p>-->
+ 
+	<a href="home.html" style="float:right;"><b><u>Back home</u></b></a>
+		
+	</div>
+
+<br>
+  <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Shipping  Address</h3>
+            <label > Full Name</label>
+            <input type="text"   placeholder="John " required="required">
+          
+            <label > Address</label>
+            <input type="text"   placeholder="#542 Vijaynagar" required="required">
+            <label > City</label>
+            <input type="text"  placeholder="Bangalore" required="required">
+
+            <div class="row">
+              <div class="col-50">
+                <label>State</label>
+                <input type="text"  placeholder="Karnataka" required="required">
+              </div>
+              <div class="col-50">
+                <label >Pincode</label>
+                <input type="text"  placeholder="560087" required="required">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+          
+			<div class="row">
+			<div class="col-50">
+			<b><input type="radio" name="modeofpay" >Online payment</b><br><br>
+            <label for="cname">Name on Card</label>
+            <input type="text"  placeholder="John " required="required">
+            <label for="ccnum">Credit card number</label>
+            <input type="text"  placeholder="1111-2222-3333-4444" required="required">
+            <label for="expmonth">Exp Month</label>
+            <input type="text"  placeholder="September" required="required">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text"  placeholder="2018" required="required">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text"  placeholder="352" required="required">
+              </div></div>
+            </div>
+			<div class="col-50">
+			<b><input type="radio" name="modeofpay" >Cash on delivery</b>
+			</div>
+			</div>
+			
+			
+          </div>
+          
+        </div>
+       
+        
+      </form>
+</div><br><hr>
+
+    <div class="container">
+      <h4>Cart </h4>
+      <p>Total Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="tp"></span></p>
+      <p>Taxes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span  s id="t"></span></p>
+     
+      
+      <hr>
+      <p>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:orange;" id="fp"><b></b></span></p>
+    </div>
+<div class="topnav">
+  
+ 
+	<button><a href="2.html" ><b><u>Confirm Payment</u></b></a></button>
+	</div>
+	<br>
+	<br>
+
+
+
+<script>
+
+var a=document.querySelector("#tp");
+var b=document.querySelector("#t");
+var c=document.querySelector("#fp");
+var d=localStorage.TotalPrice;
+a.innerHTML=localStorage.TotalPrice;
+b.innerHTML=0.05*parseInt(localStorage.TotalPrice)+"";
+c.innerHTML=parseInt(localStorage.TotalPrice)+0.05*parseInt(localStorage.TotalPrice)+""; 
+
+
+</script>
+</body>
+</html>
