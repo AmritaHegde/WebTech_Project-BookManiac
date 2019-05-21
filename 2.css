@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    color: #6a6f8c;
+    background: #c8c8c8;
+    font: 600 16px/18px 'Open Sans', sans-serif;
+    background-image: url("smile.jpg");
+
+}
+.Amr
+{
+	padding-top: 7px;
+	box-shadow: 5px 5px 5px grey;
+	border-radius:40px;
+	font-family: verdana;
+	color: white;
+	font-size: 10px;
+	width: 50%;
+	margin: auto;
+    margin-top: 20px;
+    max-width: 450px;
+    min-height: 50px;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+h1{
+	color: white;
+}
+.top{
+
+
+	position: relative;
+	left:500px;
+	color: white;
+	font-family: Verdana;
+	font-size: 50px;
+
+   
+}
