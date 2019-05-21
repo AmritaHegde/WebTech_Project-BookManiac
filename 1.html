@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BookManiac</title>
+
+
+<style>
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  align-content: left;
+  opacity: 1;			
+}
+
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+
+</style>
+
+
+
+</head>
+<link rel="stylesheet" type="text/css" href="1.css">
+<style type="text/css">
+
+	a:link {
+    color: white;
+}
+
+
+	a:visited {
+    color: white;
+}
+
+	a:hover {
+    color: blue;
+    
+}
+
+	a:active {
+    color: red;
+}
+
+</style>
+<body>
+	
+	<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(7,13,96);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(40,149,211);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="orange" font-size="45" font-family="Verdana" 
+  x="50" y="86">BookManiac!!</text>
+</svg>
+
+  <div class="topnav"><br>
+  	 <div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a id="sparrow" href="about.html">About</a><br><br>
+  		<a id="sparrow" href="service.html">Services</a><br><br>
+ 		<a id="sparrow" href="contact.html">Contact</a>
+	</div>
+
+
+<span style="font-size:25px;color: white; cursor:pointer" onclick="openNav()">&#9776; </span>
+	
+    <a href="login.php" id="jack">Sign-Up</a>
+    <a href="login.php" id="jack">Login</a>
+    
+  
+  
+
+</div><br><br>
+
+</div>
+  
+ 
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+
+ 
+
+
+<div class="slideshow-container">
+  <div id="img" align="left">
+  <h1><b>Meet your next favourite book!!!</b></h1>
+  
+  
+</div><br>
+<br>
+  
+
+<div class="mySlides fade">
+  
+  <img src="markhaddon1-2x (2).jpg" width="1000" height="300">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="Quotefancy-5811-3840x2160.jpg" width="1000" height="300">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="ernesthemingway1-2x (2).jpg" width="1000" height="300">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="Quotefancy-15478-3840x2160.jpg" width="1000" height="300">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="Quotefancy-6760-3840x2160.jpg" width="1000" height="300">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="garrisonkeillor1-2x (2).jpg" width="1000" height="300">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="Quotefancy-6679-3840x2160.jpg" width="1000" height="300">
+  
+</div>
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+	
+
+
+
+</body>
+</html>
